@@ -1,0 +1,28 @@
+<main class="main">
+  {{#with data}}
+  <form method="post" action="/purchase-edit-submit?id={{id}}" class="form-card">
+    {{> heading title='Зміна данних'}}
+    <div class="prchas-info__block">
+      {{> info title="ID:" value=id }}
+
+    </div>
+    {{> divider}}
+
+
+    {{> field label="Ім'я" name='firstname' value=firstname}}
+
+    {{> field label='Прізвище' name='lastname' value=lastname}}
+
+    {{> field label='Телефон' name='phone' value=phone}}
+
+    {{> field label='Пошта' name='email' value=email}}
+
+
+    {{> divider}}
+
+
+    {{> button text="Змінити данні"}}
+
+  </form>
+  {{/with}}
+</main>

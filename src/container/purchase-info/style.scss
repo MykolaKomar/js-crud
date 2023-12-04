@@ -1,0 +1,20 @@
+@use '../../lib/service.scss' as s;
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as
+  purchaseProduct;
+@use '../../component/field/style.scss' as field;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/button/style.scss' as button;
+@use '../../component/info/style.scss' as info;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(10);
+  padding: s.space(10);
+}
+.prchas-info__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: s.space(7);
+}

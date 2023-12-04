@@ -1,0 +1,18 @@
+<main class="main">
+  {{> heading title="Мої замовлення" }}
+  {{#each data.list}}
+  <a href="/purchase-info?id={{id}}">
+    <div class="my-purchase">
+      <span class="my-purachase__id">ID: {{id}}</span>
+      <span class="my-purachase__title">Назва:<p>{{title}}</p></span>
+      <span class="my-purachase__totalPrice">Ціна:<p>{{totalPrice}}</p></span>
+      <span class="my-purachase__bonusAdd">Бонкусів нараховано:<p>{{bonusAdd}}</p></span>
+    </div>
+  </a>
+  {{>divider}}
+
+
+
+  {{/each}}
+
+</main>

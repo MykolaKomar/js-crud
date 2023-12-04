@@ -1,0 +1,13 @@
+@use '../../lib/service.scss' as s;
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(3);
+}
+.info__title {
+  color: #808080;
+}
+.info__value {
+  color: black;
+}
