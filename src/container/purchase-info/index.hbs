@@ -1,0 +1,34 @@
+<main class="main">
+  {{#with data}}
+  {{> heading title='Інформація про замовлення'}}
+  <div class="prchas-info__block">
+    {{!-- <span>{{id}}</span> --}}
+    {{> info title="ID:" value=id }}
+
+  </div>
+  {{> divider}}
+  <div class="prchas-info__block">
+    {{> info title="Імя:" value=firstname }}
+    {{> info title="Прізвище:" value=lastname }}
+    {{> info title="Телефон:" value=phone }}
+    {{> info title="Пошта:" value=email }}
+  </div>
+  {{> divider}}
+  <div class="prchas-info__block">
+    {{> info title="Назва:" value=title }}
+    {{> info title="Коментар:" value=comment }}
+  </div>
+  {{> divider}}
+  <div class="prchas-info__block">
+    {{> info title="Вартість товару:" value=productPrice }}
+    {{> info title="Вартість доставки:" value=deliveryPrice }}
+    {{> info title="Загальна вартість:" value=totalPrice }}
+    {{> info title="Нараховано бонусів:" value=bonus }}
+  </div>
+  {{> divider}}
+
+  <a href="purchase-edit?id={{id}}">
+    {{> button text="Змінити данні"}}
+  </a>
+  {{/with}}
+</main>
